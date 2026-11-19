@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Tech Villa | Best Mobile & Laptop Repair Store in Bansi, Siddharthnagar</title>
+  <meta name="description" content="Trusted mobile phone shop & laptop repair center in Indira Nagar, Bansi, Siddharthnagar. Free device checkup, iPhone & Android repair starting at Rs 299, second-hand phones & accessories." />
+  <meta name="keywords" content="Apple Tech Villa, mobile shop in Bansi, iPhone repair Bansi, laptop repair Siddharthnagar, second hand iPhone Bansi, mobile accessories Indira Nagar Bansi, MacBook repair" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Bansi, Siddharthnagar" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .glow-card {
+      transition: all 0.25s ease;
+    }
+    .glow-card:hover {
+      box-shadow: 0 0 30px -5px rgba(34, 211, 238, 0.25);
+      transform: translateY(-2px);
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float {
+      animation: floatSlow 3.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+  <!-- Top Live Offer Announcement Bar -->
+  <div class="bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 text-white text-xs sm:text-sm py-2.5 px-4 text-center font-medium">
+    <span class="inline-flex items-center gap-2 flex-wrap justify-center">
+      <span class="px-2 py-0.5 rounded-md bg-white/20 text-[11px] font-bold uppercase tracking-wider">Special Offer</span>
+      <span>Free Mobile & Laptop Checkup! Repairing Starts at Just <strong class="underline decoration-amber-300">Rs 299</strong></span>
+      <a href="#estimator" class="underline font-bold text-amber-200 hover:text-white ml-1">Check Price →</a>
+    </span>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="sticky top-0 z-40 glass border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg shadow-cyan-500/30 group-hover:scale-105 transition">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <div>
+          <span class="font-extrabold text-lg sm:text-xl tracking-tight text-white block leading-none">Apple Tech Villa</span>
+          <span class="text-[11px] text-cyan-400 font-medium flex items-center gap-1.5 mt-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Indira Nagar, Bansi
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#estimator" class="hover:text-cyan-400 transition">Price Estimator</a>
+        <a href="#services" class="hover:text-cyan-400 transition">Repair Services</a>
+        <a href="#catalog" class="hover:text-cyan-400 transition">Phones & Accessories</a>
+        <a href="#reviews" class="hover:text-cyan-400 transition">Reviews</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Store Location</a>
+      </nav>
+
+      <!-- Header CTA Buttons -->
+      <div class="flex items-center gap-2.5">
+        <a href="tel:08887728146" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-sm font-semibold text-white border border-slate-700 transition">
+          <i class="fa-solid fa-phone text-cyan-400"></i> 088877 28146
+        </a>
+        <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20mobile%2Flaptop%20service%20ke%20baare%20mein%20jankari%20chahiye." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm shadow-lg shadow-emerald-500/25 transition">
+          <i class="fa-brands fa-whatsapp text-lg"></i> <span>WhatsApp</span>
+        </a>
+        <button type="button" onclick="toggleMobileMenu()" aria-label="Open menu" class="lg:hidden p-2.5 rounded-xl bg-slate-800/90 text-slate-200 border border-slate-700 hover:text-cyan-400">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileNav" class="hidden lg:hidden px-4 pb-4 pt-2 border-t border-slate-800/80 bg-slate-950/95 space-y-2 text-sm font-medium">
+      <a href="#estimator" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl hover:bg-slate-900 text-slate-200">Price Estimator</a>
+      <a href="#services" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl hover:bg-slate-900 text-slate-200">Repair Services</a>
+      <a href="#catalog" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl hover:bg-slate-900 text-slate-200">Phones & Accessories</a>
+      <a href="#reviews" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl hover:bg-slate-900 text-slate-200">Customer Reviews & FAQ</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-xl hover:bg-slate-900 text-slate-200">Store Location & Timing</a>
+    </div>
+  </header>
+
+  <!-- Hero Section with Ambient Glow -->
+  <section class="relative overflow-hidden pt-12 pb-16 sm:py-20 px-4">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-32 -right-24 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 items-center relative z-10">
+      <!-- Hero Left Content -->
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700/80 text-xs font-semibold mb-6 flex-wrap">
+          <span id="storeStatusBadge" class="inline-flex items-center gap-1.5 text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Store Open Now (10 AM – 9 PM)
+          </span>
+          <span class="text-slate-600">|</span>
+          <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 Rated in Bansi</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] mb-5">
+          Bansi Ka No.1 <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500">Mobile & Laptop</span> Repair Hub
+        </h1>
+
+        <p class="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed max-w-xl">
+          Chahe iPhone ki screen tooti ho, Android ki battery slow ho, ya Laptop hang kar raha ho — paayein <strong>Free Checkup</strong> aur expert repairing sirf <strong>Rs 299</strong> se shuru.
+        </p>
+
+        <div class="flex flex-wrap gap-3.5 mb-10">
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20apna%20device%20check%2Frepair%20karwana%20hai." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 text-slate-950 font-extrabold text-base shadow-xl shadow-emerald-500/25 transition transform hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-2xl"></i> Book Free Checkup on WhatsApp
+          </a>
+          <a href="tel:08887728146" class="inline-flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-base border border-slate-700 transition">
+            <i class="fa-solid fa-phone-volume text-cyan-400"></i> Call Now
+          </a>
+        </div>
+
+        <!-- 3 Highlights Strip -->
+        <div class="grid grid-cols-3 gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800/90 max-w-lg">
+          <div class="text-center border-r border-slate-800">
+            <p class="text-lg sm:text-2xl font-extrabold text-cyan-400">Rs 0</p>
+            <p class="text-[11px] sm:text-xs text-slate-400">Device Diagnosis</p>
+          </div>
+          <div class="text-center border-r border-slate-800">
+            <p class="text-lg sm:text-2xl font-extrabold text-white">Rs 299</p>
+            <p class="text-[11px] sm:text-xs text-slate-400">Repair Starting</p>
+          </div>
+          <div class="text-center">
+            <p class="text-lg sm:text-2xl font-extrabold text-emerald-400">Same Day</p>
+            <p class="text-[11px] sm:text-xs text-slate-400">Express Delivery</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Repair Cost Estimator Card -->
+      <div id="estimator" class="lg:col-span-5 bg-slate-900/95 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+        <div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 text-slate-950 text-xs font-extrabold shadow-lg">
+          Instant Price Check
+        </div>
+        <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-1">Repair Cost Estimator</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mb-5">Device aur issue chunein — turant starting price aur WhatsApp booking paayein.</p>
+
+        <form onsubmit="sendWhatsAppInquiry(event)" class="space-y-4">
+          <!-- Step 1: Select Device Category -->
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">1. Device Category</label>
+            <div class="grid grid-cols-3 gap-2" id="deviceCategoryBtns">
+              <button type="button" onclick="selectCategory('iPhone / Apple', 499, this)" class="cat-btn active py-2.5 px-2 rounded-xl border border-cyan-400 bg-cyan-500/15 text-cyan-300 text-xs font-bold transition">
+                <i class="fa-brands fa-apple block text-base mb-1"></i> iPhone
+              </button>
+              <button type="button" onclick="selectCategory('Android Phone', 299, this)" class="cat-btn py-2.5 px-2 rounded-xl border border-slate-700 bg-slate-950 text-slate-400 text-xs font-bold hover:border-slate-500 transition">
+                <i class="fa-brands fa-android block text-base mb-1"></i> Android
+              </button>
+              <button type="button" onclick="selectCategory('Laptop / PC', 299, this)" class="cat-btn py-2.5 px-2 rounded-xl border border-slate-700 bg-slate-950 text-slate-400 text-xs font-bold hover:border-slate-500 transition">
+                <i class="fa-solid fa-laptop block text-base mb-1"></i> Laptop
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Device Model -->
+          <div>
+            <label for="deviceModel" class="block text-xs font-semibold text-slate-300 mb-1">2. Model Name (e.g. iPhone 13, Vivo T4, Dell)</label>
+            <input type="text" id="deviceModel" required placeholder="Apne phone ya laptop ka model likhein" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400" />
+          </div>
+
+          <!-- Step 3: Problem / Service Dropdown -->
+          <div>
+            <label for="serviceType" class="block text-xs font-semibold text-slate-300 mb-1">3. Problem / Service Chunein</label>
+            <select id="serviceType" onchange="updateEstimate()" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400">
+              <option value="General Checkup & Servicing" data-price="299">General Checkup & Servicing (Starts Rs 299)</option>
+              <option value="Charging Jack / Speaker / Mic Repair" data-price="299">Charging Jack / Speaker / Mic Repair (Starts Rs 299)</option>
+              <option value="Windows / Software Installation" data-price="299">Windows / Software Installation (Starts Rs 299)</option>
+              <option value="Original Battery Replacement" data-price="699">Battery Replacement (Starts Rs 699)</option>
+              <option value="Screen / Display Replacement" data-price="999">Screen / Display Replacement (Starts Rs 999)</option>
+              <option value="Laptop SSD / RAM Speed Upgrade" data-price="1199">Laptop SSD / RAM Speed Upgrade (Starts Rs 1,199)</option>
+            </select>
+          </div>
+
+          <!-- Dynamic Price Estimate Display -->
+          <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Estimated Starting Price</span>
+              <span class="text-xs text-emerald-400 font-medium">✓ Free Diagnosis Included</span>
+            </div>
+            <div class="text-right">
+              <span id="estimatedPrice" class="text-2xl font-extrabold text-cyan-400">Rs 299*</span>
+            </div>
+          </div>
+
+          <!-- Step 4: Customer Name -->
+          <div>
+            <label for="custName" class="sr-only">Aapka Naam</label>
+            <input type="text" id="custName" required placeholder="Aapka Naam (e.g. Rahul)" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400" />
+          </div>
+
+          <!-- Inline Status Message Box (No alert() used) -->
+          <div id="estimatorFeedback" class="hidden text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 rounded-xl px-3 py-2 text-center"></div>
+
+          <!-- Submit CTA -->
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 text-slate-950 font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition cursor-pointer">
+            <i class="fa-brands fa-whatsapp text-xl"></i> Confirm Quote on WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Repair Services Grid -->
+  <section id="services" class="py-16 px-4 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-cyan-400 font-bold text-xs uppercase tracking-widest">Why Choose Apple Tech Villa</span>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1.5 mb-3">Complete Tech Repair & Upgrade</h2>
+      <p class="text-slate-400 text-sm sm:text-base">Bansi, Siddharthnagar mein genuine parts, transparent pricing aur same-day repair guarantee.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-slate-900/90 border border-slate-800 hover:border-cyan-500/60 glow-card rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-4">
+          <i class="fa-brands fa-apple"></i>
+        </div>
+        <h3 class="font-bold text-lg text-white mb-2">iPhone & MacBook Specialist</h3>
+        <p class="text-sm text-slate-400 mb-4">iPhone display, TrueTone restore, battery health replacement, back glass, aur MacBook/iPad servicing.</p>
+        <div class="flex items-center justify-between pt-3 border-t border-slate-800">
+          <span class="text-xs font-bold text-cyan-400">Starts at Rs 299</span>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20iPhone%2FMacBook%20repair%20karwana%20hai." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-emerald-400 hover:underline">Book Now →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-slate-900/90 border border-slate-800 hover:border-cyan-500/60 glow-card rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl mb-4">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <h3 class="font-bold text-lg text-white mb-2">All Android Brands Repair</h3>
+        <p class="text-sm text-slate-400 mb-4">Vivo, Oppo, Redmi, Realme, Samsung, OnePlus aur Infinix ke original folder, battery, mic aur charging jack.</p>
+        <div class="flex items-center justify-between pt-3 border-t border-slate-800">
+          <span class="text-xs font-bold text-cyan-400">Starts at Rs 299</span>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20Android%20phone%20repair%20karwana%20hai." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-emerald-400 hover:underline">Book Now →</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-slate-900/90 border border-slate-800 hover:border-cyan-500/60 glow-card rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-4">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h3 class="font-bold text-lg text-white mb-2">Laptop Repair & SSD Upgrade</h3>
+        <p class="text-sm text-slate-400 mb-4">Slow laptop ko 10x fast banayein! NVMe SSD upgrade, RAM boost, hinge repair, keyboard aur Windows 10/11 setup.</p>
+        <div class="flex items-center justify-between pt-3 border-t border-slate-800">
+          <span class="text-xs font-bold text-cyan-400">Starts at Rs 299</span>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20Laptop%20servicing%20ya%20SSD%20upgrade%20karwana%20hai." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-emerald-400 hover:underline">Book Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Filterable Store Catalog (Second-Hand & Accessories) -->
+  <section id="catalog" class="py-16 px-4 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Store Showcase</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">Second-Hand Devices & Accessories</h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-2" id="catalogFilters">
+          <button type="button" onclick="filterCatalog('all', this)" class="filter-btn px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs transition cursor-pointer">All Items</button>
+          <button type="button" onclick="filterCatalog('phones', this)" class="filter-btn px-4 py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-xs transition cursor-pointer">Second-Hand Phones</button>
+          <button type="button" onclick="filterCatalog('laptops', this)" class="filter-btn px-4 py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-xs transition cursor-pointer">Second-Hand Laptops</button>
+          <button type="button" onclick="filterCatalog('accessories', this)" class="filter-btn px-4 py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-xs transition cursor-pointer">Accessories</button>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="catalogGrid">
+        <!-- Item 1: Second-Hand iPhones -->
+        <div class="catalog-item glow-card bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between" data-category="phones">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-400 text-[11px] font-bold">Certified Pre-Owned</span>
+              <i class="fa-brands fa-apple text-slate-400 text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">Second-Hand iPhones (With Box)</h3>
+            <p class="text-xs text-slate-400 mb-4">100% original display & good battery health iPhones. Exchange offer bhi available hai.</p>
+          </div>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20aapke%20paas%20kaun-kaun%20se%20Second-Hand%20iPhones%20available%20hain%20aur%20kya%20price%20hai%3F" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 border border-slate-700 hover:border-emerald-500 text-emerald-400 font-bold text-xs text-center transition">
+            <i class="fa-brands fa-whatsapp mr-1"></i> Ask Available Models & Price
+          </a>
+        </div>
+
+        <!-- Item 2: Second-Hand 5G Android Phones -->
+        <div class="catalog-item glow-card bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between" data-category="phones">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-cyan-500/15 text-cyan-400 text-[11px] font-bold">Budget Deals</span>
+              <i class="fa-solid fa-mobile-screen-button text-slate-400 text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">Second-Hand 5G Android Phones</h3>
+            <p class="text-xs text-slate-400 mb-4">Vivo, Oppo, Redmi, Realme aur Samsung ke clean condition budget smartphones.</p>
+          </div>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20Second-Hand%20Android%20phone%20chahiye%2C%20latest%20stock%20bataiye." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 border border-slate-700 hover:border-emerald-500 text-emerald-400 font-bold text-xs text-center transition">
+            <i class="fa-brands fa-whatsapp mr-1"></i> Check Android Stock on WhatsApp
+          </a>
+        </div>
+
+        <!-- Item 3: Second-Hand Dell, HP & MacBook -->
+        <div class="catalog-item glow-card bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between" data-category="laptops">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-purple-500/15 text-purple-400 text-[11px] font-bold">Tested Laptops</span>
+              <i class="fa-solid fa-laptop text-slate-400 text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">Second-Hand Dell, HP & MacBook</h3>
+            <p class="text-xs text-slate-400 mb-4">Students, CSC center, aur office work ke liye SSD wale fast laptops best price par.</p>
+          </div>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20aapke%20paas%20second-hand%20laptops%20ki%20starting%20price%20kya%20hai%3F" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 border border-slate-700 hover:border-emerald-500 text-emerald-400 font-bold text-xs text-center transition">
+            <i class="fa-brands fa-whatsapp mr-1"></i> Get Laptop List on WhatsApp
+          </a>
+        </div>
+
+        <!-- Item 4: Fast Chargers & Data Cables -->
+        <div class="catalog-item glow-card bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between" data-category="accessories">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-amber-500/15 text-amber-400 text-[11px] font-bold">Original Gear</span>
+              <i class="fa-solid fa-bolt text-amber-400 text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">Fast Chargers & Data Cables</h3>
+            <p class="text-xs text-slate-400 mb-4">20W/33W/65W/80W original fast adapters, Type-C aur iPhone Lightning cables.</p>
+          </div>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20original%20fast%20charger%2Fcable%20chahiye." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 border border-slate-700 hover:border-emerald-500 text-emerald-400 font-bold text-xs text-center transition">
+            <i class="fa-brands fa-whatsapp mr-1"></i> Order / Check Price
+          </a>
+        </div>
+
+        <!-- Item 5: AirPods, Earbuds & Neckbands -->
+        <div class="catalog-item glow-card bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between" data-category="accessories">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-pink-500/15 text-pink-400 text-[11px] font-bold">Trending</span>
+              <i class="fa-solid fa-headphones text-pink-400 text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">AirPods, Earbuds & Neckbands</h3>
+            <p class="text-xs text-slate-400 mb-4">High bass wireless earbuds, neckbands, wired earphones aur Bluetooth speakers.</p>
+          </div>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20wireless%20earbuds%2Fneckband%20lena%20hai." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 border border-slate-700 hover:border-emerald-500 text-emerald-400 font-bold text-xs text-center transition">
+            <i class="fa-brands fa-whatsapp mr-1"></i> Order / Check Price
+          </a>
+        </div>
+
+        <!-- Item 6: Covers, Glass & Laptop Bags -->
+        <div class="catalog-item glow-card bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between" data-category="accessories">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-sky-500/15 text-sky-400 text-[11px] font-bold">Protection & Laptop</span>
+              <i class="fa-solid fa-shield-halved text-sky-400 text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">Covers, Glass & Laptop Bags</h3>
+            <p class="text-xs text-slate-400 mb-4">Stylish back covers, 11D/UV tempered glass, laptop bags, wireless mouse & keyboards.</p>
+          </div>
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20back%20cover%2Ftempered%20glass%20ya%20laptop%20accessories%20chahiye." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 border border-slate-700 hover:border-emerald-500 text-emerald-400 font-bold text-xs text-center transition">
+            <i class="fa-brands fa-whatsapp mr-1"></i> Order / Check Price
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews & Interactive FAQ Accordion Section -->
+  <section id="reviews" class="py-16 px-4 max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <!-- Google Reviews Highlight -->
+      <div>
+        <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Customer Trust</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 mb-6">Bansi Ke Customers Kya Kehte Hain</h2>
+
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-full bg-cyan-500/20 text-cyan-300 font-bold flex items-center justify-center text-sm">S</div>
+                <div>
+                  <p class="text-sm font-bold text-white">Verified Google Customer</p>
+                  <p class="text-[11px] text-slate-400">iPhone & Mobile Repair</p>
+                </div>
+              </div>
+              <div class="text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300">"Best mobile aur laptop repair shop in Bansi! Kaam bahut safai se aur sahi rate par hota hai. Owner ka behaviour bahut helpful hai."</p>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-300 font-bold flex items-center justify-center text-sm">A</div>
+                <div>
+                  <p class="text-sm font-bold text-white">Local Store Buyer</p>
+                  <p class="text-[11px] text-slate-400">Laptop SSD Upgrade</p>
+                </div>
+              </div>
+              <div class="text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300">"Purana laptop bahut slow chalta tha, yahan SSD aur Windows dalwane ke baad ekdum naya jaisa fast ho gaya. Highly recommended!"</p>
+          </div>
+
+          <a href="https://search.google.com/local/writereview?placeid=ChIJ79u3sqvXljkRmEMnask1b4U" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-amber-400 font-bold text-xs sm:text-sm transition">
+            <i class="fa-brands fa-google"></i> Apna Review Google Par Likhein →
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive FAQ Accordion -->
+      <div>
+        <span class="text-cyan-400 font-bold text-xs uppercase tracking-widest">Aam Sawal (FAQ)</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 mb-6">Aksar Pooche Jane Wale Sawal</h2>
+
+        <div class="space-y-3">
+          <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-4 cursor-pointer" open>
+            <summary class="font-bold text-sm sm:text-base text-white flex items-center justify-between list-none">
+              <span>Kya device checkup sach mein free hai?</span>
+              <i class="fa-solid fa-chevron-down text-cyan-400 text-xs group-open:rotate-180 transition"></i>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-400 mt-2.5 leading-relaxed">
+              Ji haan! Aap apna mobile ya laptop store par laakar bilkul free checkup karwa sakte hain. Hum pehle problem aur exact kharch batate hain, aapki permission ke baad hi repair shuru karte hain.
+            </p>
+          </details>
+
+          <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-4 cursor-pointer">
+            <summary class="font-bold text-sm sm:text-base text-white flex items-center justify-between list-none">
+              <span>Mobile screen ya battery badalne mein kitna time lagta hai?</span>
+              <i class="fa-solid fa-chevron-down text-cyan-400 text-xs group-open:rotate-180 transition"></i>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-400 mt-2.5 leading-relaxed">
+              Zyadatar models ki screen, battery aur charging jack replacement 45 minute se 2 ghante ke andar same-day kar diya jata hai.
+            </p>
+          </details>
+
+          <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-4 cursor-pointer">
+            <summary class="font-bold text-sm sm:text-base text-white flex items-center justify-between list-none">
+              <span>Kya second-hand phone lene par purana phone exchange ho jayega?</span>
+              <i class="fa-solid fa-chevron-down text-cyan-400 text-xs group-open:rotate-180 transition"></i>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-400 mt-2.5 leading-relaxed">
+              Bilkul! Aap apna purana smartphone (valid bill/ID ke saath) exchange karke best value par doosra phone le sakte hain.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Store Location -->
+  <footer id="contact" class="bg-slate-900 border-t border-slate-800 pt-14 pb-24 sm:pb-14 px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2.5 mb-3">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-slate-950 font-extrabold">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-white">Apple Tech Villa</h3>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">
+          Indira Nagar, Bansi, Siddharthnagar ka bharosemand mobile phone shop aur laptop repair center. Genuine spare parts, fair price aur fast support.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white mb-3">Store Address & Timing</h4>
+        <ul class="space-y-2.5 text-sm text-slate-300">
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-location-dot text-cyan-400 mt-1"></i>
+            <span>Indira Nagar, Bansi, Siddharthnagar, Uttar Pradesh - 272153</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-clock text-cyan-400"></i>
+            <span>Open Daily: 10:00 AM – 9:00 PM (All 7 Days)</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-phone text-cyan-400"></i>
+            <a href="tel:08887728146" class="hover:text-cyan-400 font-semibold">088877 28146</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white mb-3">Direct Contact</h4>
+        <div class="flex flex-col gap-3">
+          <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20store%20visit%20karna%20hai." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/20 transition">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp: +91 88877 28146
+          </a>
+          <a href="https://maps.google.com/maps?cid=9614962868644955032" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm border border-slate-700 transition">
+            <i class="fa-solid fa-map-location-dot text-cyan-400"></i> Get Directions on Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+      © 2026 Apple Tech Villa • Indira Nagar, Bansi, Siddharthnagar (UP) • All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918887728146?text=Hello%20Apple%20Tech%20Villa%2C%20mujhe%20help%20chahiye." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="animate-float fixed bottom-5 right-5 z-50 flex items-center gap-2 px-4 py-3 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm shadow-2xl shadow-emerald-500/40 transition">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="hidden sm:inline">WhatsApp Us</span>
+  </a>
+
+  <script>
+    let selectedCategory = 'iPhone / Apple';
+    let baseCategoryPrice = 499;
+
+    function toggleMobileMenu() {
+      const nav = document.getElementById('mobileNav');
+      if (nav) {
+        nav.classList.toggle('hidden');
+      }
+    }
+
+    function selectCategory(cat, price, btn) {
+      selectedCategory = cat;
+      baseCategoryPrice = price;
+      document.querySelectorAll('.cat-btn').forEach(b => {
+        b.classList.remove('border-cyan-400', 'bg-cyan-500/15', 'text-cyan-300');
+        b.classList.add('border-slate-700', 'bg-slate-950', 'text-slate-400');
+      });
+      btn.classList.remove('border-slate-700', 'bg-slate-950', 'text-slate-400');
+      btn.classList.add('border-cyan-400', 'bg-cyan-500/15', 'text-cyan-300');
+      updateEstimate();
+    }
+
+    function updateEstimate() {
+      const select = document.getElementById('serviceType');
+      const servicePrice = parseInt(select.options[select.selectedIndex].getAttribute('data-price'), 10);
+      const finalPrice = Math.max(baseCategoryPrice === 499 && servicePrice > 299 ? servicePrice + 200 : servicePrice, 299);
+      document.getElementById('estimatedPrice').innerText = `Rs ${finalPrice}*`;
+    }
+
+    function sendWhatsAppInquiry(e) {
+      e.preventDefault();
+      try {
+        const name = document.getElementById('custName').value.trim();
+        const model = document.getElementById('deviceModel').value.trim();
+        const service = document.getElementById('serviceType').value;
+        const est = document.getElementById('estimatedPrice').innerText;
+        const feedback = document.getElementById('estimatorFeedback');
+
+        const message = `Hello Apple Tech Villa!%0A*Name:* ${encodeURIComponent(name)}%0A*Category:* ${encodeURIComponent(selectedCategory)}%0A*Model:* ${encodeURIComponent(model)}%0A*Service:* ${encodeURIComponent(service)}%0A*Website Estimate:* ${encodeURIComponent(est)}%0AKripya exact price aur time batayein.`;
+        
+        if (feedback) {
+          feedback.textContent = 'WhatsApp open ho raha hai...';
+          feedback.classList.remove('hidden');
+        }
+        window.open(`https://wa.me/918887728146?text=${message}`, '_blank', 'noopener,noreferrer');
+      } catch (err) {
+        const feedback = document.getElementById('estimatorFeedback');
+        if (feedback) {
+          feedback.textContent = 'Kripya seedha +91 88877 28146 par WhatsApp ya Call karein.';
+          feedback.classList.remove('hidden');
+        }
+      }
+    }
+
+    function filterCatalog(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-cyan-500', 'text-slate-950');
+        b.classList.add('bg-slate-800', 'text-slate-300');
+      });
+      btn.classList.remove('bg-slate-800', 'text-slate-300');
+      btn.classList.add('bg-cyan-500', 'text-slate-950');
+
+      document.querySelectorAll('.catalog-item').forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
